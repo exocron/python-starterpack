@@ -1,0 +1,12 @@
+version: '3'
+
+# Simple dev configuration with bind-mounted work directory
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: compose/app/Dockerfile
+      target: app-dev
+    init: true
+    volumes:
+      - ..:/app

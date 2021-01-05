@@ -1,0 +1,6 @@
+version: '3'
+
+# Override command to "sleep infinity" when running in VSCode
+services:
+  app:
+    command: sleep infinity

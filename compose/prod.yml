@@ -1,0 +1,10 @@
+version: '3'
+
+# Prod config, changed target to app-prod and removed mounts
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: compose/app/Dockerfile
+      target: app-prod
+    init: true

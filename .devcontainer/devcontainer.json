@@ -1,0 +1,16 @@
+{
+    "name": "Python Starter",
+    "dockerComposeFile": [
+        "../compose/dev.yml",
+        "docker-compose.yml",
+    ],
+    "service": "app",
+    "workspaceFolder": "/app",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/ash"
+    },
+    "extensions": [
+        "ms-azuretools.vscode-docker"
+    ],
+    "remoteUser": "vscode"
+}
